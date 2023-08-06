@@ -7,8 +7,10 @@ const page5btn = document.querySelector("#page5btn");
 const page6btn = document.querySelector("#page6btn");
 const page7btn = document.querySelector("#page7btn");
 const page8btn = document.querySelector("#page8btn");
+const page9btn = document.querySelector("#page9btn");
 var allpages = document.querySelectorAll(".page");
 var allpages2 = document.getElementsByClassName(".page");
+
 
 const hamBtn = document.querySelector("#hamIcon")
 const menuItemsList = document.querySelector("nav ul");
@@ -22,6 +24,7 @@ function hideall() { //function to hide all pages
     }
     for (let onepage of allpages2) { //go through all subtopic pages
         onepage.style.opacity = 0; //hide it
+        
     }
 }
 function show(pgno) { //function to show selected page no
@@ -38,7 +41,7 @@ function fadeIn(page) {
     var opacity = 0; // Initial opacity
     var interval = setInterval(function () {
         if (opacity < 1) {
-            opacity += 0.05;
+            opacity += 0.03;
             page.style.opacity = opacity;
         } else {
             clearInterval(interval); // Stop the interval when opacity reaches 0
@@ -75,6 +78,9 @@ page7btn.addEventListener("click", function () {
     show(7)
 });
 page8btn.addEventListener("click", function () {
+    show(8)
+});
+page9btn.addEventListener("click", function () {
     show(9)
 });
 

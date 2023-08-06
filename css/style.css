@@ -44,6 +44,12 @@ button {
     cursor: pointer;
     flex: 100%;
 }
+    button:hover {
+        background-color: slategrey;
+    }
+    button:active {
+        background-color: dimgrey;
+    }
 .item {
     height: 42vh;
     box-sizing: border-box;
@@ -85,7 +91,7 @@ button {
 }
 .item5 {
     background-color: rgb(230, 230, 230);
-    flex: 100%;
+    flex: 66%;
     text-align: left;
     border: 0.1rem solid rgb(0, 0, 0);
     font-size: 1.5rem;
@@ -94,6 +100,13 @@ button {
     background-color: rgb(230, 230, 230);
     flex: 50%;
     text-align: left;
+    border: 0.1rem solid rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+.item7 {
+    background-color: rgb(230, 230, 230);
+    flex: 33%;
+    text-align: center;
     border: 0.1rem solid rgb(0, 0, 0);
     font-size: 1.5rem;
 }
